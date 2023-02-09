@@ -33,9 +33,8 @@ inquirer
   ])
   .then((response) => {
     const { projName, desc, license, gitName, email } = response;
-    console.log(response);
     fs.writeFile('README-generator.md', `# ${projName}
-[Description](#description)---[License](#license)---[Questions](#questions)\\
+[Description](#description)---[License](#license)---[Questions](#questions)
 
 ## Description
 ${desc}
